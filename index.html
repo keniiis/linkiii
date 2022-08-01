@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Keniiis - Links</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          color2: 0xff00f0,
+          wingSpan: 40.00,
+          separation: 100.0,
+          alignment: 77.0,
+          cohesion: 5.0,
+          quantity: 1.0,
+        });
+
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0px)";
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+        <header>
+            <div class="image">
+              <img class="image__img" src="assets/images/mi-cara.jpg" alt="" />
+            </div>
+            <h1 class="titulo">@keniiis</h1>
+          </header>
+          <ul class="lista">
+            <li class="elemento">
+              <a class="link" href="#"
+                ><i class="fa-solid fa-house"></i>Oficial website</a
+              >
+            </li>
+            <li class="elemento">
+              <a class="link" href="#"><i class="fa-brands fa-youtube"></i>Youtube</a>
+            </li>
+            <li class="elemento">
+              <a class="link" href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+            </li>
+            <li class="elemento">
+              <a class="link" href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+            </li>
+          </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: url(./assets/images/chiloe.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    margin-top: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vanta {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    position: relative;
+    width: 80%;
+}
+  
+main.animated {
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+}
+
+.image{
+    width: 30%;
+    height: auto;
+}
+
+.image__img{
+    width: 60%;
+    height: auto;
+    border: 5px solid coral;
+    border-radius: 50%;
+    box-shadow: rgb(28, 32, 93 / 24%) 0px 2px 8px 0px;
+}
+
+.titulo{
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: coral;
+    border-radius: 1em;
+    padding: 0.2em 0.9em;
+    margin-top: 0.5em;
+}
+
+.lista{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 4em;
+}
+
+.elemento{
+    background-color: #fffa;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    border-radius: 2em;
+    width: 60%;
+    text-align: center;
+    padding: 0.9em 0.5em;
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
+}
+
+.link i{
+    margin-right: 0.5em;
+}
+
+@media screen and (max-width: 1140px){
+    main{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+    .image__img{
+        width: 25%;
+        height: auto;
+    }
+    .titulo{
+        font-size: 1.2em;
+    }
+    .lista{
+        height: 50%;
+        flex-direction: column;
+    }
+    .elemento{
+        width: 60%;
+    }    
+}
+
+@media screen and (max-width: 476px){
+    main{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+    .image__img{
+        width: 40%;
+        height: auto;
+    }
+    .titulo{
+        font-size: 1.2em;
+    }
+    .lista{
+        height: 70%;
+        flex-direction: column;
+    }
+    .elemento{
+        width: 80%;
+    }    
+}
