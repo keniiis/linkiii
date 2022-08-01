@@ -136,6 +136,7 @@ main.animated {
     .lista{
         height: 70%;
         flex-direction: column;
+        margin-top: 1em;
     }
     .elemento{
         width: 80%;
