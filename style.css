@@ -134,11 +134,18 @@ main.animated {
         font-size: 1.2em;
     }
     .lista{
-        height: 70%;
+        width: 90%;
         flex-direction: column;
         margin-top: 1em;
     }
     .elemento{
         width: 80%;
-    }    
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
+    }
 }
